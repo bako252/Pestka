@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background: #292F36 ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilecard{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.button{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #FFBE86, #B2F7EF);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-border 5s linear infinite;
+}
+
+@keyframes animated-border{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.button img{
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+.question{
+    color: #F4F6F7;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
