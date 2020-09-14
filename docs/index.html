@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/pestka/docs/jquery.lettering.js"></script>
+    <script type="text/javascript" src="/pestka/docs/circletype.min.js"></script>
     <title>Pestka</title>
 </head>
 <body>
+    <div id="text">Jadła albo nie jadła, oto jest pytanie?</div>
+        <script>
+            new CircleType(document.getElementById('text'))
+            .dir(1)
+            .radius(240);
+        </script>
     <div class="profilecard">
-        <div class="start_anim"></div>
         <div class="button">
             <img src="image/pestka_góra.png" alt="zdjecie pestki">
         </div>
-        <div id="text">
-            Jadła albo nie jadła, oto jest pytanie? &nbsp;
-        </div>
     </div>
 </body>
-<script src="index.js"></script>
+
 </html>
